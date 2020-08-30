@@ -1,0 +1,6 @@
+noise()
+  .mult(osc(10,0.25,1))
+  .scrollY(1,0.25)
+  .pixelate([100,40,20,70].fast(0.25))
+  .diff(src(o0).rotate([-0.05,0.05].fast(0.125)))
+  .out(o0)
